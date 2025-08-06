@@ -53,9 +53,6 @@ INSERT DATA {
       "facet": true
     }
   ],
-  "languages": [
-    "cs"
-  ],
   "types": [
     "http://www.w3.org/2004/02/skos/core#Concept",
     "http://onto.fel.cvut.cz/ontologies/slovník/agendový/popis-dat/pojem/slovník"
@@ -65,8 +62,7 @@ INSERT DATA {
   "importGraph": false,
   "skipInitialIndexing": false,
   "boostProperties": [],
-  "stripMarkup": false,
-  "analyzer": "org.apache.lucene.analysis.cz.CzechAnalyzer"
+  "stripMarkup": false
 }
 ''' .
 }

@@ -68,17 +68,6 @@ following changes are needed:
 TermIt backend stores and loads strings based on the configured language. To change it, set
 the `TERMIT_PERSISTENCE_LANGUAGE` value in `docker-compose.yml` to the appropriate language tag (e.g., en, de).
 
-#### Full Text Search
-
-Full text search (FTS) is implemented via Lucene connectors in the underlying GraphDB repository. These connectors are
-language-specific, so to use a different language for TermIt and FTS working correctly, the Lucene connectors need to be
-configured accordingly. To use a different language that Czech, set the following in the connector-creating SPARQL
-queries in `db-server/lucene`:
-
-- Set the value of the "languages" attribute to the appropriate language tag
-- Set the value of the "analyzer" attribute to the appropriate fully qualified Lucene analyzer class name. See, for
-  example, https://lucene.apache.org/core/4_0_0/analyzers-common/overview-summary.html.
-
 ### Further TermIt Configuration
 
 As stated above, TermIt is highly configurable. The following table lists the names of environment variables that can be
